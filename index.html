@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJEDANOUM Josué — Ingénieur Informatique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">JD<span>.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Accueil</a></li>
+      <li><a href="#about" class="nav-link">À Propos</a></li>
+      <li><a href="#competences" class="nav-link">Compétences</a></li>
+      <li><a href="#projets" class="nav-link">Projets</a></li>
+      <li><a href="#experience" class="nav-link">Expériences</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Me contacter</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge animate-fade-up" style="--delay:0.1s">
+          <span class="badge-dot"></span> Disponible pour un Emploi
+        </div>
+        <h1 class="hero-title animate-fade-up" style="--delay:0.2s">
+          DJEDANOUM<br><span class="hero-name-accent">Josué</span>
+        </h1>
+        <p class="hero-subtitle animate-fade-up" style="--delay:0.35s">
+          Ingénieur en Informatique
+        </p>
+        <p class="hero-tagline animate-fade-up" style="--delay:0.45s">
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </p>
+        <div class="hero-actions animate-fade-up" style="--delay:0.6s">
+          <a href="#projets" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+        <div class="hero-stats animate-fade-up" style="--delay:0.75s">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Années d'études</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Stages réalisés</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Domaines maîtrisés</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap animate-fade-left" style="--delay:0.3s">
+        <div class="hero-img-ring"></div>
+        <div class="hero-img-ring2"></div>
+        <img src="./Image/photo-hero.png" alt="DJEDANOUM Josué" class="hero-img" onerror="this.src='https://ui-avatars.com/api/?name=Josue+Djedanoum&background=0a4f7d&color=fff&size=400'"/>
+        <div class="hero-img-badge">
+          <i class="fas fa-shield-halved"></i>
+          <span>Cybersécurité</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrap reveal">
+            <img src="./Image/photo-about.jpg" alt="À propos de Josué" class="about-img" onerror="this.src='https://ui-avatars.com/api/?name=Josue+Djedanoum&background=1a6b45&color=fff&size=400'"/>
+            <div class="about-img-overlay">
+              <div class="about-info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>N'Djamena, Tchad</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-langs reveal">
+            <h4>Langues</h4>
+            <div class="lang-item">
+              <span>Français</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:85%"></div></div>
+              <span class="lang-level">Bien</span>
+            </div>
+            <div class="lang-item">
+              <span>Anglais</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:50%"></div></div>
+              <span class="lang-level">Passable</span>
+            </div>
+            <div class="lang-item">
+              <span>Arabe local</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:45%"></div></div>
+              <span class="lang-level">Passable</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="section-label reveal">À Propos</div>
+          <h2 class="section-title reveal">Qui suis-je ?</h2>
+          <p class="about-desc reveal">
+            Ingénieur en sécurité informatique diplômé de l'<strong>ENASTIC</strong>, je suis passionné par la sécurité des systèmes, les infrastructures réseaux et le développement de solutions numériques adaptées au contexte tchadien.
+          </p>
+          <p class="about-desc reveal">
+            Motivé, curieux et rigoureux, je m'engage à contribuer aux projets technologiques tout en sécurisant les solutions numériques dans un environnement innovant.
+          </p>
+          <div class="about-domains reveal">
+            <div class="domain-card">
+              <i class="fas fa-shield-halved"></i>
+              <span>Cybersécurité</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-screwdriver-wrench"></i>
+              <span>Maintenance</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-code"></i>
+              <span>Dev Web & Mobile</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-photo-film"></i>
+              <span>Multimédia</span>
+            </div>
+          </div>
+          <div class="about-loisirs reveal">
+            <h4>Loisirs</h4>
+            <div class="loisirs-list">
+              <span><i class="fas fa-futbol"></i> Sport</span>
+              <span><i class="fas fa-book-open"></i> Lecture</span>
+              <span><i class="fas fa-music"></i> Musique</span>
+              <span><i class="fas fa-plane"></i> Voyage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPÉTENCES ===== -->
+  <section class="competences" id="competences">
+    <div class="skills-bg-img">
+      <img src="./Image/photo-skills.jpg" alt="Skills background" onerror="this.src=''"/>
+      <div class="skills-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="section-label light reveal">Mes Expertises</div>
+      <h2 class="section-title light reveal">Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-domain-card reveal">
+          <div class="sdk-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Cybersécurité</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Audit de sécurité informatique</li>
+            <li><i class="fas fa-check-circle"></i> Sécurité des Réseaux & Systèmes</li>
+            <li><i class="fas fa-check-circle"></i> Administration Sécurisée Windows & Linux</li>
+            <li><i class="fas fa-check-circle"></i> Acceptation Universelle des noms de domaine</li>
+          </ul>
+        </div>
+
+        <div class="skill-domain-card reveal">
+          <div class="sdk-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+          <h3>Maintenance Informatique</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Maintenance Préventive et Corrective</li>
+            <li><i class="fas fa-check-circle"></i> Support ICT de Second Niveau</li>
+            <li><i class="fas fa-check-circle"></i> Support et Formation</li>
+            <li><i class="fas fa-check-circle"></i> Outils Bureautiques</li>
+          </ul>
+        </div>
+
+        <div class="skill-domain-card reveal">
+          <div class="sdk-icon"><i class="fas fa-code"></i></div>
+          <h3>Développement Web & Mobile</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> HTML · CSS · JavaScript</li>
+            <li><i class="fas fa-check-circle"></i> React.js · Node.js · Express</li>
+            <li><i class="fas fa-check-circle"></i> React Native · Flutter</li>
+            <li><i class="fas fa-check-circle"></i> WordPress (CMS)</li>
+          </ul>
+        </div>
+
+        <div class="skill-domain-card reveal">
+          <div class="sdk-icon"><i class="fas fa-photo-film"></i></div>
+          <h3>Multimédia</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Design graphique (Figma)</li>
+            <li><i class="fas fa-check-circle"></i> Maquettage UI/UX</li>
+            <li><i class="fas fa-check-circle"></i> Montage vidéo</li>
+            <li><i class="fas fa-check-circle"></i> Contenus visuels & réseaux sociaux</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Tech stack pills -->
+      <div class="tech-stack reveal">
+        <span class="tech-pill"><i class="fab fa-html5"></i> HTML5</span>
+        <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+        <span class="tech-pill"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+        <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+        <span class="tech-pill"><i class="fab fa-flutter"></i> Flutter</span>
+        <span class="tech-pill"><i class="fab fa-wordpress"></i> WordPress</span>
+        <span class="tech-pill"><i class="fab fa-linux"></i> Linux</span>
+        <span class="tech-pill"><i class="fab fa-figma"></i> Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETS ===== -->
+  <section class="projets" id="projets">
+    <div class="container">
+      <div class="section-label reveal">Réalisations</div>
+      <h2 class="section-title reveal">Mes Projets</h2>
+
+      <div class="projets-filter reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="multimedia">Multimédia</button>
+      </div>
+
+      <div class="projets-grid">
+
+        <div class="projet-card reveal" data-cat="web">
+          <div class="projet-img-wrap">
+            <div class="projet-img-placeholder" style="background: linear-gradient(135deg, #0a4f7d, #1a6b45)">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="projet-overlay">
+              <a href="https://atnv-moundou.netlify.app" target="_blank" class="projet-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="projet-info">
+            <span class="projet-tag">Web</span>
+            <h3>Site ATNV Moundou</h3>
+            <p>Site officiel de l'Association Tchadienne des Nouvelles Technologies de Moundou. Interface moderne et responsive.</p>
+            <div class="projet-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projet-card reveal" data-cat="web">
+          <div class="projet-img-wrap">
+            <div class="projet-img-placeholder" style="background: linear-gradient(135deg, #1a6b45, #0a4f7d)">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="projet-overlay">
+              <a href="https://djedano.github.io/cafe_le_coin" target="_blank" class="projet-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="projet-info">
+            <span class="projet-tag">Web</span>
+            <h3>Café Le Coin</h3>
+            <p>Site vitrine pour un café local avec design chaleureux, menu interactif et formulaire de réservation.</p>
+            <div class="projet-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projet-card reveal" data-cat="web">
+          <div class="projet-img-wrap">
+            <div class="projet-img-placeholder" style="background: linear-gradient(135deg, #0d3b6e, #2d8a5f)">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="projet-overlay">
+              <a href="https://djedano.github.io/AD_BUSINESS/" target="_blank" class="projet-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="projet-info">
+            <span class="projet-tag">Web</span>
+            <h3>AD Business</h3>
+            <p>Site web professionnel pour une entreprise, avec présentation des services et interface de contact.</p>
+            <div class="projet-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projet-card reveal" data-cat="design">
+          <div class="projet-img-wrap">
+            <div class="projet-img-placeholder" style="background: linear-gradient(135deg, #1a3a5c, #145236)">
+              <i class="fas fa-capsules"></i>
+            </div>
+            <div class="projet-overlay">
+              <a href="https://www.figma.com/design/ZkqL3cgwiPHRvxtgIeLHz3/Maquette-PharmaLink-Moundou" target="_blank" class="projet-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="projet-info">
+            <span class="projet-tag">Design</span>
+            <h3>PharmaLink Moundou</h3>
+            <p>Maquette UI/UX d'une application de gestion pharmaceutique sur Figma. Design centré utilisateur.</p>
+            <div class="projet-stack">
+              <span>Figma</span><span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projet-card reveal" data-cat="multimedia">
+          <div class="projet-img-wrap">
+            <div class="projet-img-placeholder" style="background: linear-gradient(135deg, #0a4f7d, #0d7a4e)">
+              <i class="fas fa-photo-film"></i>
+            </div>
+            <div class="projet-overlay">
+              <a href="https://www.facebook.com/Authenticscorporation" target="_blank" class="projet-link"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+          <div class="projet-info">
+            <span class="projet-tag">Multimédia</span>
+            <h3>Contenus Authentic Corporation</h3>
+            <p>Création de designs graphiques et montages vidéos pour la communication digitale d'Authentic Corporation sur Facebook.</p>
+            <div class="projet-stack">
+              <span>Design</span><span>Vidéo</span><span>Réseaux sociaux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPÉRIENCES ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-label reveal">Parcours</div>
+      <h2 class="section-title reveal">Expériences & Formation</h2>
+      <div class="timeline-wrap">
+
+        <div class="timeline-col">
+          <h3 class="tl-col-title reveal"><i class="fas fa-briefcase"></i> Stages & Formations</h3>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2026 — En cours</div>
+            <div class="tl-card">
+              <h4>Formation Anglais Avancé</h4>
+              <span class="tl-place">Aspire Centre · N'Djamena</span>
+              <p>Formation avancée en langue anglaise (20 jan. – 20 avr. 2026).</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2025</div>
+            <div class="tl-card">
+              <h4>Formation Développement Web & Mobile</h4>
+              <span class="tl-place">ATNV · Moundou</span>
+              <p>Formation intensive en développement web et mobile (17 mars – 17 oct. 2025).</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2024</div>
+            <div class="tl-card">
+              <h4>Formation Noms de Domaine & Emails</h4>
+              <span class="tl-place">ENASTIC · N'Djamena</span>
+              <p>Acceptation Universelle des noms de domaine et des emails internalisés.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2023 – 2024</div>
+            <div class="tl-card">
+              <h4>Stagiaire Maintenancier</h4>
+              <span class="tl-place">Structural E-TECH · Moursal, N'Djamena</span>
+              <p>Maintenance informatique (19 juil. 2023 – 2 mars 2024).</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2022</div>
+            <div class="tl-card">
+              <h4>Stage Académique</h4>
+              <span class="tl-place">ONAMA · Moundou</span>
+              <p>Stage académique du 24 août au 12 octobre 2022.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="timeline-col">
+          <h3 class="tl-col-title reveal"><i class="fas fa-graduation-cap"></i> Formation Académique</h3>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot-edu"></div>
+            <div class="tl-date">2024</div>
+            <div class="tl-card tl-card-edu">
+              <h4>Licence — Cybersécurité</h4>
+              <span class="tl-place">ENASTIC · N'Djamena (2023–2024)</span>
+              <p>Licence en informatique option cybersécurité.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot-edu"></div>
+            <div class="tl-date">2023</div>
+            <div class="tl-card tl-card-edu">
+              <h4>DTS Informatique</h4>
+              <span class="tl-place">ENASTIC · Sarh (2020–2023)</span>
+              <p>Diplôme de Technicien Supérieur en informatique.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot-edu"></div>
+            <div class="tl-date">2020</div>
+            <div class="tl-card tl-card-edu">
+              <h4>Baccalauréat Série D</h4>
+              <span class="tl-place">Lycée Ngarkos · Sarh (2013–2020)</span>
+              <p>Baccalauréat de l'Enseignement du Second Degré.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot-edu"></div>
+            <div class="tl-date">2017</div>
+            <div class="tl-card tl-card-edu">
+              <h4>BEPCT</h4>
+              <span class="tl-place">ECA · Sarh (2009–2013)</span>
+              <p>Brevet d'Étude du Premier Cycle Tchadien.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot-edu"></div>
+            <div class="tl-date">2012</div>
+            <div class="tl-card tl-card-edu">
+              <h4>CEPT</h4>
+              <span class="tl-place">École Saint François Xavier · Sarh</span>
+              <p>Certificat d'Étude Primaire du Tchad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-bg">
+      <img src="Image/photo-hero.jpg" alt="" class="contact-bg-img" onerror="this.style.display='none'"/>
+      <div class="contact-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="section-label light reveal">Contact</div>
+      <h2 class="section-title light reveal">Travaillons Ensemble</h2>
+      <p class="contact-intro reveal">Vous avez un projet ou une opportunité de stage ? N'hésitez pas à me contacter !</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span class="cc-label">Téléphone</span>
+              <a href="tel:+23560357694">+235 60 35 76 94</a>
+              <a href="tel:+23593844636">+235 93 84 46 36</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="cc-label">Email</span>
+              <a href="mailto:josuedjedanoum001@gmail.com">djedano001@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="cc-label">Localisation</span>
+              <span>N'Djamena, Tchad</span>
+            </div>
+          </div>
+          <div class="contact-ref">
+            <h4>Référence</h4>
+            <p><strong>DOUNIA Germain</strong><br/>Ingénieur Informaticien</p>
+            <a href="tel:+23596424640"><i class="fas fa-phone"></i> +235 96 42 46 40</a>
+            <a href="mailto:germain.dounia@authentic-corp.com"><i class="fas fa-envelope"></i> germain.dounia@authentic-corp.com</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" placeholder="Votre nom" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet" placeholder="Objet de votre message"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">JD<span>.</span></div>
+        <p>DJEDANOUM Josué — Ingénieur Informatique · N'Djamena, Tchad</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À Propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expériences</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 DJEDANOUM Josué. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
